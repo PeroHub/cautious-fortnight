@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.nav-container
+.logo-con {
+    /* border: 1px solid red; */
+}
+
+.nav-container
+.logo-con img {
+    width: 100px;
+    height: 70px;
+}
+
+.nav-links-con {
+    /* border: 1px solid red; */
+}
+
+.nav-links-con nav ul  {
+    display: flex;
+    
+}
+
+.nav-links-con nav {
+    padding: 25px;
+    
+}
+
+.nav-links-con nav ul li {
+    margin: 0 5px;
+    text-decoration: none;
+    list-style-type: none;
+    font-size: 1.1rem;
+    padding: 0 10px;
+    color: #002e5b;
+    transition: 0.3s;
+    
+}
+
+.nav-links-con nav ul li:hover {
+    color: #e83e8c;
+    cursor: pointer;
+}
+
+.btn-container {
+    margin-top: 15px;
+    position: relative;
+    right: 20px;
+    
+}
+
+.nav-container .icon-bar {
+    position: relative;
+    top: 17px;
+    left: 250px;
+    font-size: 2rem;
+    color: #e83e8c;
+    display: none;
+
+}
+
+.btn-container button {
+    width: 150px;
+    height: 45px;
+    font-size: 1.2rem;
+    background-color: #143fb3;
+    color: #EFF6FF;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+    
+}
+
+.btn-container button:hover {
+    background-color: #e83e8c;
+    border: 1px solid transparent;
+}
+
+.btn-container button:focus{
+    outline: none;
+}
+
+
+
+@media only screen and (min-width: 320px) and (max-width: 991px){
+    .nav-container {
+        flex-direction: column;
+    }
+
+    body {
+        margin: 0 auto;
+    }
+
+    .nav-container
+    .logo-con {
+        position: relative;
+        left: 100px;
+        
+    }
+
+    .nav-container
+    .logo-con img {
+        width: 70px;
+        height: 50px;
+    }
+
+    .nav-links-con nav ul {
+        flex-direction: column;
+        position: relative;
+        left: 70px;
+    }
+
+    .btn-container {
+        left: 90px;
+    }
+
+    .nav-links-con nav ul li {
+        margin: 10px 0;
+    }
+
+    .nav-container .icon-bar {
+        position: relative;
+        top: -53px;
+        left: 450px;
+        display: initial;
+        
+
+    }
+
+    
+}
+
+
+/* @media only screen  and (max-width: 900px) {
+    .btn-container button {
+        position: relative;
+        left: 250px;
+    }
+
+    .nav-links-con nav ul  {
+        margin: 0 20px;
+        border: 1px solid red;
+        width: 750px;
+    }
+} */
+
