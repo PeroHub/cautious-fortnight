@@ -99,7 +99,7 @@ body {
 
 
 
-@media only screen and (max-width: 600px){
+@media only screen and (min-width: 320px) and (max-width: 991px){
     .nav-container {
         flex-direction: column;
     }
@@ -145,6 +145,33 @@ body {
     }
 
     
+}
+
+@media only screen and (max-width: 480px){
+    .nav-container
+    .logo-con {
+        position: relative;
+        left: 50px;
+        
+    }
+
+    .nav-links-con nav ul {
+        flex-direction: column;
+        position: relative;
+        left: 40px;
+    }
+
+    .nav-container .icon-bar {
+        position: relative;
+        top: -53px;
+        left: 300px;
+        display: initial;
+    
+    }
+
+    .btn-container {
+        left: 50px;
+    }
 }
 
 
